@@ -16,13 +16,13 @@ class WorkExperienceViewController: BaseModuleViewController, WorkExperienceView
     //MARK: Initialization
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        self.collectionMediator = WorkExperienceCollectionMediator()
+        self.collectionMediator = WorkExperienceCollectionMediator("WorkExperienceTableViewCell")
         self.output = WorkExperiencePresenter(viewInput: self, collectionMediator: self.collectionMediator)
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        self.collectionMediator = WorkExperienceCollectionMediator()
+        self.collectionMediator = WorkExperienceCollectionMediator("WorkExperienceTableViewCell")
         self.output = WorkExperiencePresenter(viewInput: self, collectionMediator: self.collectionMediator)
     }
 

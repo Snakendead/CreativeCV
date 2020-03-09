@@ -16,13 +16,13 @@ class SkillsViewController: BaseModuleViewController, SkillsViewInput {
     //MARK: Initialization
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        self.collectionMediator = SkillsCollectionMediator()
+        self.collectionMediator = SkillsCollectionMediator("SkillsTableViewCell")
         self.output = SkillsPresenter(viewInput: self, collectionMediator: self.collectionMediator)
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        self.collectionMediator = SkillsCollectionMediator()
+        self.collectionMediator = SkillsCollectionMediator("SkillsTableViewCell")
         self.output = SkillsPresenter(viewInput: self, collectionMediator: self.collectionMediator)
     }
 

@@ -17,7 +17,6 @@
 		3B2A5A05A56E1A780031C82A /* SkillsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A3E6C0E1FA55D5097E98CE /* SkillsInteractor.swift */; };
 		4B572E666DE055B4BFF1B8C9 /* SkillsCollectionMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC001055A05D8146CAA6D3E /* SkillsCollectionMediator.swift */; };
 		4C58CAB6B2E75C478F054CBF /* WelcomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1F3602C6D5482127C016F0 /* WelcomePresenter.swift */; };
-		551333471F8E9B3A704420BD /* EducationViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3B3E2C93172BF45349616D /* EducationViewOutput.swift */; };
 		6AB2698C4CB7C1F08E5CF016 /* WorkExperienceInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290C0D4B102686AA2250C22 /* WorkExperienceInteractorOutput.swift */; };
 		76B17C05CE8CA35865574468 /* WorkExperienceViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ED3D93C3AAA044DC5F5A2D /* WorkExperienceViewInput.swift */; };
 		78FDFC8D9DC0A29CFA6E6DFE /* WorkExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1CAD77C82866485ED92D4A /* WorkExperienceViewController.swift */; };
@@ -32,21 +31,20 @@
 		979E996C24163E95001A21EF /* CreativeCVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979E996B24163E95001A21EF /* CreativeCVUITests.swift */; };
 		979E997B2416868A001A21EF /* BaseModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979E997A2416868A001A21EF /* BaseModuleViewController.swift */; };
 		979E997F2416872A001A21EF /* ServiceFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979E997E2416872A001A21EF /* ServiceFacade.swift */; };
+		979E998424168827001A21EF /* WorkExperienceCellViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979E998324168827001A21EF /* WorkExperienceCellViewInput.swift */; };
+		979E998724168851001A21EF /* WorkExperienceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979E998524168851001A21EF /* WorkExperienceTableViewCell.swift */; };
+		979E998824168851001A21EF /* WorkExperienceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 979E998624168851001A21EF /* WorkExperienceTableViewCell.xib */; };
+		979E998B24168881001A21EF /* SkillsCellViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979E998A24168881001A21EF /* SkillsCellViewInput.swift */; };
+		979E998E241688A3001A21EF /* SkillsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979E998C241688A3001A21EF /* SkillsTableViewCell.swift */; };
+		979E998F241688A3001A21EF /* SkillsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 979E998D241688A3001A21EF /* SkillsTableViewCell.xib */; };
 		9AA6FC1A7E1B6E962E64EFFE /* WelcomeInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B486336A7CCF0D58F1694AD /* WelcomeInteractorOutput.swift */; };
-		B061A5EE1F7EAD390923839D /* EducationInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C75D25D2EB0AB0279C633B4 /* EducationInteractorInput.swift */; };
 		B3B2D948A86F6E701A801772 /* WelcomeInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0635134B10DD81265173B765 /* WelcomeInteractorInput.swift */; };
 		B7A6633EDF22B29BD7EACA3C /* SkillsInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD82B79C53767873F470B7AC /* SkillsInteractorOutput.swift */; };
 		C146DCFB0A8D44AD9F8A1949 /* WelcomeViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADD2C63EDB5DD6041F25AC7 /* WelcomeViewInput.swift */; };
 		C2B22124C857054C8030B3AF /* WorkExperienceViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16A26BB7BB007C2682E5076 /* WorkExperienceViewOutput.swift */; };
-		CDA7D2B3113B1371F7880EDF /* EducationCollectionMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216C7BBB0493FC1C9B1B64A8 /* EducationCollectionMediator.swift */; };
 		D4C6A64153930513FEDA7D9F /* SkillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86D577564439DAC590CA10C /* SkillsViewController.swift */; };
-		D5353C032F715DB7888A6B00 /* EducationInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334D040B3DF16D133097889D /* EducationInteractorOutput.swift */; };
-		DADB7347C137C1942D0F88BC /* EducationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC93C19D6192A4C3A3443C14 /* EducationViewController.swift */; };
 		E759BBAE7246313AE962F4F2 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D1B048C04DE1EFED564194 /* WelcomeViewController.swift */; };
 		F157EA5DCF5D456E15782351 /* WelcomeViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3FDA62CA908EAA1B7D5834 /* WelcomeViewOutput.swift */; };
-		F92C7DDB9B5BF3C550DCB671 /* EducationViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CFB746C9CDB91C1EA352B6 /* EducationViewInput.swift */; };
-		FA84C34C7F20BC8154E304AF /* EducationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FB7BAAF452341B1A70CAC2 /* EducationInteractor.swift */; };
-		FADC59BD635946F3083D1C30 /* EducationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC09AE01E60E5346176E70B /* EducationPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,18 +69,13 @@
 		13749BE8B2EE027A16B31648 /* SkillsViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SkillsViewInput.swift; sourceTree = "<group>"; };
 		1B1F3602C6D5482127C016F0 /* WelcomePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WelcomePresenter.swift; sourceTree = "<group>"; };
 		1F1CAD77C82866485ED92D4A /* WorkExperienceViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WorkExperienceViewController.swift; sourceTree = "<group>"; };
-		1FC09AE01E60E5346176E70B /* EducationPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EducationPresenter.swift; sourceTree = "<group>"; };
-		216C7BBB0493FC1C9B1B64A8 /* EducationCollectionMediator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EducationCollectionMediator.swift; sourceTree = "<group>"; };
 		252D4F9C3F301EFC152CD1B3 /* SkillsInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SkillsInteractorInput.swift; sourceTree = "<group>"; };
 		2BC001055A05D8146CAA6D3E /* SkillsCollectionMediator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SkillsCollectionMediator.swift; sourceTree = "<group>"; };
 		2C3FDA62CA908EAA1B7D5834 /* WelcomeViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WelcomeViewOutput.swift; sourceTree = "<group>"; };
-		334D040B3DF16D133097889D /* EducationInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EducationInteractorOutput.swift; sourceTree = "<group>"; };
-		35CFB746C9CDB91C1EA352B6 /* EducationViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EducationViewInput.swift; sourceTree = "<group>"; };
 		3B486336A7CCF0D58F1694AD /* WelcomeInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WelcomeInteractorOutput.swift; sourceTree = "<group>"; };
 		46A3E6C0E1FA55D5097E98CE /* SkillsInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SkillsInteractor.swift; sourceTree = "<group>"; };
 		47596BB5EF8C8642DF391FA5 /* SkillsViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SkillsViewOutput.swift; sourceTree = "<group>"; };
 		5ADD2C63EDB5DD6041F25AC7 /* WelcomeViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WelcomeViewInput.swift; sourceTree = "<group>"; };
-		6C75D25D2EB0AB0279C633B4 /* EducationInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EducationInteractorInput.swift; sourceTree = "<group>"; };
 		78538B6DDB2A2731B520DF30 /* WelcomeInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WelcomeInteractor.swift; sourceTree = "<group>"; };
 		86FA8176DA51955554E14C52 /* WorkExperiencePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WorkExperiencePresenter.swift; sourceTree = "<group>"; };
 		979E994624163E8F001A21EF /* CreativeCV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreativeCV.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,8 +93,13 @@
 		979E996D24163E95001A21EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		979E997A2416868A001A21EF /* BaseModuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModuleViewController.swift; sourceTree = "<group>"; };
 		979E997E2416872A001A21EF /* ServiceFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFacade.swift; sourceTree = "<group>"; };
+		979E998324168827001A21EF /* WorkExperienceCellViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkExperienceCellViewInput.swift; sourceTree = "<group>"; };
+		979E998524168851001A21EF /* WorkExperienceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkExperienceTableViewCell.swift; sourceTree = "<group>"; };
+		979E998624168851001A21EF /* WorkExperienceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorkExperienceTableViewCell.xib; sourceTree = "<group>"; };
+		979E998A24168881001A21EF /* SkillsCellViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsCellViewInput.swift; sourceTree = "<group>"; };
+		979E998C241688A3001A21EF /* SkillsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsTableViewCell.swift; sourceTree = "<group>"; };
+		979E998D241688A3001A21EF /* SkillsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SkillsTableViewCell.xib; sourceTree = "<group>"; };
 		A0D1B048C04DE1EFED564194 /* WelcomeViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		AC93C19D6192A4C3A3443C14 /* EducationViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EducationViewController.swift; sourceTree = "<group>"; };
 		B872E063B958CEBAAA59FD12 /* WorkExperienceInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WorkExperienceInteractorInput.swift; sourceTree = "<group>"; };
 		B8ED3D93C3AAA044DC5F5A2D /* WorkExperienceViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WorkExperienceViewInput.swift; sourceTree = "<group>"; };
 		BD82B79C53767873F470B7AC /* SkillsInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SkillsInteractorOutput.swift; sourceTree = "<group>"; };
@@ -111,8 +109,6 @@
 		E16A26BB7BB007C2682E5076 /* WorkExperienceViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WorkExperienceViewOutput.swift; sourceTree = "<group>"; };
 		E86D577564439DAC590CA10C /* SkillsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SkillsViewController.swift; sourceTree = "<group>"; };
 		EABB7474121DB2D127C8C3F2 /* WorkExperienceInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WorkExperienceInteractor.swift; sourceTree = "<group>"; };
-		F6FB7BAAF452341B1A70CAC2 /* EducationInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EducationInteractor.swift; sourceTree = "<group>"; };
-		FF3B3E2C93172BF45349616D /* EducationViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EducationViewOutput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,7 +142,6 @@
 				979E99792416866E001A21EF /* Base */,
 				E73EE757EFF3ABD3FE506F59 /* Welcome */,
 				65B7AFAFD2EDCA85051E5414 /* Skills */,
-				4EC160966F188726444A6A08 /* Education */,
 				1E05B6CA0F1B811276E153A9 /* WorkExperience */,
 			);
 			path = Modules;
@@ -158,17 +153,7 @@
 				13749BE8B2EE027A16B31648 /* SkillsViewInput.swift */,
 				E86D577564439DAC590CA10C /* SkillsViewController.swift */,
 			);
-			name = ViewLayer;
 			path = ViewLayer;
-			sourceTree = "<group>";
-		};
-		09B2AA22D3C87238A6104261 /* CollectionMediator */ = {
-			isa = PBXGroup;
-			children = (
-				216C7BBB0493FC1C9B1B64A8 /* EducationCollectionMediator.swift */,
-			);
-			name = CollectionMediator;
-			path = CollectionMediator;
 			sourceTree = "<group>";
 		};
 		1E05B6CA0F1B811276E153A9 /* WorkExperience */ = {
@@ -179,7 +164,6 @@
 				DE70E040BFE659D86566281E /* Interactor */,
 				B793D3F8B065CDA5C619731C /* CollectionMediator */,
 			);
-			name = WorkExperience;
 			path = WorkExperience;
 			sourceTree = "<group>";
 		};
@@ -201,36 +185,13 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
-		4EC160966F188726444A6A08 /* Education */ = {
-			isa = PBXGroup;
-			children = (
-				5E9DFAEA520FEBFB1DA084D1 /* ViewLayer */,
-				E3FA9042B6A22131B7013D29 /* Presenter */,
-				AFFA2291CCC99CFC7044458A /* Interactor */,
-				09B2AA22D3C87238A6104261 /* CollectionMediator */,
-			);
-			name = Education;
-			path = Education;
-			sourceTree = "<group>";
-		};
 		5DFFC1CC9ED0D93775C9F99A /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
 				252D4F9C3F301EFC152CD1B3 /* SkillsInteractorInput.swift */,
 				46A3E6C0E1FA55D5097E98CE /* SkillsInteractor.swift */,
 			);
-			name = Interactor;
 			path = Interactor;
-			sourceTree = "<group>";
-		};
-		5E9DFAEA520FEBFB1DA084D1 /* ViewLayer */ = {
-			isa = PBXGroup;
-			children = (
-				35CFB746C9CDB91C1EA352B6 /* EducationViewInput.swift */,
-				AC93C19D6192A4C3A3443C14 /* EducationViewController.swift */,
-			);
-			name = ViewLayer;
-			path = ViewLayer;
 			sourceTree = "<group>";
 		};
 		65B7AFAFD2EDCA85051E5414 /* Skills */ = {
@@ -241,7 +202,6 @@
 				5DFFC1CC9ED0D93775C9F99A /* Interactor */,
 				C95691D3AD810EA31C2EBA1F /* CollectionMediator */,
 			);
-			name = Skills;
 			path = Skills;
 			sourceTree = "<group>";
 		};
@@ -252,7 +212,6 @@
 				D02CA0B3BB65F09686C043C6 /* SkillsPresenter.swift */,
 				BD82B79C53767873F470B7AC /* SkillsInteractorOutput.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -263,7 +222,6 @@
 				86FA8176DA51955554E14C52 /* WorkExperiencePresenter.swift */,
 				C290C0D4B102686AA2250C22 /* WorkExperienceInteractorOutput.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -273,6 +231,7 @@
 				979E994824163E8F001A21EF /* CreativeCV */,
 				979E997D241686E1001A21EF /* Additional */,
 				979E997C241686BE001A21EF /* Managers */,
+				979E9980241687E6001A21EF /* View */,
 				02B8B377BFA48DB82375B485 /* Modules */,
 			);
 			sourceTree = "<group>";
@@ -346,14 +305,41 @@
 			path = CreativeCVUITests;
 			sourceTree = "<group>";
 		};
-		AFFA2291CCC99CFC7044458A /* Interactor */ = {
+		979E9980241687E6001A21EF /* View */ = {
 			isa = PBXGroup;
 			children = (
-				6C75D25D2EB0AB0279C633B4 /* EducationInteractorInput.swift */,
-				F6FB7BAAF452341B1A70CAC2 /* EducationInteractor.swift */,
+				979E9981241687F9001A21EF /* Cell */,
 			);
-			name = Interactor;
-			path = Interactor;
+			path = View;
+			sourceTree = "<group>";
+		};
+		979E9981241687F9001A21EF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				979E998924168869001A21EF /* Skills */,
+				979E998224168800001A21EF /* WorkExperience */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		979E998224168800001A21EF /* WorkExperience */ = {
+			isa = PBXGroup;
+			children = (
+				979E998324168827001A21EF /* WorkExperienceCellViewInput.swift */,
+				979E998524168851001A21EF /* WorkExperienceTableViewCell.swift */,
+				979E998624168851001A21EF /* WorkExperienceTableViewCell.xib */,
+			);
+			path = WorkExperience;
+			sourceTree = "<group>";
+		};
+		979E998924168869001A21EF /* Skills */ = {
+			isa = PBXGroup;
+			children = (
+				979E998A24168881001A21EF /* SkillsCellViewInput.swift */,
+				979E998C241688A3001A21EF /* SkillsTableViewCell.swift */,
+				979E998D241688A3001A21EF /* SkillsTableViewCell.xib */,
+			);
+			path = Skills;
 			sourceTree = "<group>";
 		};
 		B793D3F8B065CDA5C619731C /* CollectionMediator */ = {
@@ -361,7 +347,6 @@
 			children = (
 				DEEF736EFCBE80E436882743 /* WorkExperienceCollectionMediator.swift */,
 			);
-			name = CollectionMediator;
 			path = CollectionMediator;
 			sourceTree = "<group>";
 		};
@@ -370,7 +355,6 @@
 			children = (
 				2BC001055A05D8146CAA6D3E /* SkillsCollectionMediator.swift */,
 			);
-			name = CollectionMediator;
 			path = CollectionMediator;
 			sourceTree = "<group>";
 		};
@@ -380,7 +364,6 @@
 				B8ED3D93C3AAA044DC5F5A2D /* WorkExperienceViewInput.swift */,
 				1F1CAD77C82866485ED92D4A /* WorkExperienceViewController.swift */,
 			);
-			name = ViewLayer;
 			path = ViewLayer;
 			sourceTree = "<group>";
 		};
@@ -390,19 +373,7 @@
 				B872E063B958CEBAAA59FD12 /* WorkExperienceInteractorInput.swift */,
 				EABB7474121DB2D127C8C3F2 /* WorkExperienceInteractor.swift */,
 			);
-			name = Interactor;
 			path = Interactor;
-			sourceTree = "<group>";
-		};
-		E3FA9042B6A22131B7013D29 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				FF3B3E2C93172BF45349616D /* EducationViewOutput.swift */,
-				1FC09AE01E60E5346176E70B /* EducationPresenter.swift */,
-				334D040B3DF16D133097889D /* EducationInteractorOutput.swift */,
-			);
-			name = Presenter;
-			path = Presenter;
 			sourceTree = "<group>";
 		};
 		E73EE757EFF3ABD3FE506F59 /* Welcome */ = {
@@ -531,6 +502,8 @@
 			files = (
 				979E995624163E94001A21EF /* LaunchScreen.storyboard in Resources */,
 				979E995324163E94001A21EF /* Assets.xcassets in Resources */,
+				979E998F241688A3001A21EF /* SkillsTableViewCell.xib in Resources */,
+				979E998824168851001A21EF /* WorkExperienceTableViewCell.xib in Resources */,
 				979E995124163E8F001A21EF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -575,17 +548,13 @@
 				081828D645BC740CB76E4544 /* SkillsInteractorInput.swift in Sources */,
 				3B2A5A05A56E1A780031C82A /* SkillsInteractor.swift in Sources */,
 				4B572E666DE055B4BFF1B8C9 /* SkillsCollectionMediator.swift in Sources */,
-				F92C7DDB9B5BF3C550DCB671 /* EducationViewInput.swift in Sources */,
-				DADB7347C137C1942D0F88BC /* EducationViewController.swift in Sources */,
-				551333471F8E9B3A704420BD /* EducationViewOutput.swift in Sources */,
-				FADC59BD635946F3083D1C30 /* EducationPresenter.swift in Sources */,
-				D5353C032F715DB7888A6B00 /* EducationInteractorOutput.swift in Sources */,
-				B061A5EE1F7EAD390923839D /* EducationInteractorInput.swift in Sources */,
-				FA84C34C7F20BC8154E304AF /* EducationInteractor.swift in Sources */,
-				CDA7D2B3113B1371F7880EDF /* EducationCollectionMediator.swift in Sources */,
+				979E998E241688A3001A21EF /* SkillsTableViewCell.swift in Sources */,
+				979E998724168851001A21EF /* WorkExperienceTableViewCell.swift in Sources */,
+				979E998B24168881001A21EF /* SkillsCellViewInput.swift in Sources */,
 				76B17C05CE8CA35865574468 /* WorkExperienceViewInput.swift in Sources */,
 				78FDFC8D9DC0A29CFA6E6DFE /* WorkExperienceViewController.swift in Sources */,
 				C2B22124C857054C8030B3AF /* WorkExperienceViewOutput.swift in Sources */,
+				979E998424168827001A21EF /* WorkExperienceCellViewInput.swift in Sources */,
 				14671835A0871B1D0DCA6E63 /* WorkExperiencePresenter.swift in Sources */,
 				6AB2698C4CB7C1F08E5CF016 /* WorkExperienceInteractorOutput.swift in Sources */,
 				7B7FEA4711AF4162A8CB2334 /* WorkExperienceInteractorInput.swift in Sources */,
