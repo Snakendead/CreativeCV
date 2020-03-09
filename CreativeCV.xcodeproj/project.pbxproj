@@ -7,14 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		081828D645BC740CB76E4544 /* SkillsInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252D4F9C3F301EFC152CD1B3 /* SkillsInteractorInput.swift */; };
+		0FB2651FF74E9A3E0EFCFFA6 /* WorkExperienceInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABB7474121DB2D127C8C3F2 /* WorkExperienceInteractor.swift */; };
+		14671835A0871B1D0DCA6E63 /* WorkExperiencePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FA8176DA51955554E14C52 /* WorkExperiencePresenter.swift */; };
+		1663EAB9810ABBC90D7606B0 /* SkillsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02CA0B3BB65F09686C043C6 /* SkillsPresenter.swift */; };
+		29368A86AA94AA5604B87411 /* SkillsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47596BB5EF8C8642DF391FA5 /* SkillsViewOutput.swift */; };
+		29C67261EA89286B6C8FE2A0 /* WorkExperienceCollectionMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEF736EFCBE80E436882743 /* WorkExperienceCollectionMediator.swift */; };
+		2C13FA7A0C293E9092AB2E9C /* SkillsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13749BE8B2EE027A16B31648 /* SkillsViewInput.swift */; };
+		3B2A5A05A56E1A780031C82A /* SkillsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A3E6C0E1FA55D5097E98CE /* SkillsInteractor.swift */; };
+		4B572E666DE055B4BFF1B8C9 /* SkillsCollectionMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC001055A05D8146CAA6D3E /* SkillsCollectionMediator.swift */; };
+		4C58CAB6B2E75C478F054CBF /* WelcomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1F3602C6D5482127C016F0 /* WelcomePresenter.swift */; };
+		551333471F8E9B3A704420BD /* EducationViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3B3E2C93172BF45349616D /* EducationViewOutput.swift */; };
+		6AB2698C4CB7C1F08E5CF016 /* WorkExperienceInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290C0D4B102686AA2250C22 /* WorkExperienceInteractorOutput.swift */; };
+		76B17C05CE8CA35865574468 /* WorkExperienceViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ED3D93C3AAA044DC5F5A2D /* WorkExperienceViewInput.swift */; };
+		78FDFC8D9DC0A29CFA6E6DFE /* WorkExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1CAD77C82866485ED92D4A /* WorkExperienceViewController.swift */; };
+		79B9A009B9E47E807B7C26F0 /* WelcomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78538B6DDB2A2731B520DF30 /* WelcomeInteractor.swift */; };
+		7B7FEA4711AF4162A8CB2334 /* WorkExperienceInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B872E063B958CEBAAA59FD12 /* WorkExperienceInteractorInput.swift */; };
 		979E994A24163E8F001A21EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979E994924163E8F001A21EF /* AppDelegate.swift */; };
 		979E994C24163E8F001A21EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979E994B24163E8F001A21EF /* SceneDelegate.swift */; };
-		979E994E24163E8F001A21EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979E994D24163E8F001A21EF /* ViewController.swift */; };
 		979E995124163E8F001A21EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 979E994F24163E8F001A21EF /* Main.storyboard */; };
 		979E995324163E94001A21EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 979E995224163E94001A21EF /* Assets.xcassets */; };
 		979E995624163E94001A21EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 979E995424163E94001A21EF /* LaunchScreen.storyboard */; };
 		979E996124163E95001A21EF /* CreativeCVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979E996024163E95001A21EF /* CreativeCVTests.swift */; };
 		979E996C24163E95001A21EF /* CreativeCVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979E996B24163E95001A21EF /* CreativeCVUITests.swift */; };
+		979E997B2416868A001A21EF /* BaseModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979E997A2416868A001A21EF /* BaseModuleViewController.swift */; };
+		979E997F2416872A001A21EF /* ServiceFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979E997E2416872A001A21EF /* ServiceFacade.swift */; };
+		9AA6FC1A7E1B6E962E64EFFE /* WelcomeInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B486336A7CCF0D58F1694AD /* WelcomeInteractorOutput.swift */; };
+		B061A5EE1F7EAD390923839D /* EducationInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C75D25D2EB0AB0279C633B4 /* EducationInteractorInput.swift */; };
+		B3B2D948A86F6E701A801772 /* WelcomeInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0635134B10DD81265173B765 /* WelcomeInteractorInput.swift */; };
+		B7A6633EDF22B29BD7EACA3C /* SkillsInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD82B79C53767873F470B7AC /* SkillsInteractorOutput.swift */; };
+		C146DCFB0A8D44AD9F8A1949 /* WelcomeViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADD2C63EDB5DD6041F25AC7 /* WelcomeViewInput.swift */; };
+		C2B22124C857054C8030B3AF /* WorkExperienceViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16A26BB7BB007C2682E5076 /* WorkExperienceViewOutput.swift */; };
+		CDA7D2B3113B1371F7880EDF /* EducationCollectionMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216C7BBB0493FC1C9B1B64A8 /* EducationCollectionMediator.swift */; };
+		D4C6A64153930513FEDA7D9F /* SkillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86D577564439DAC590CA10C /* SkillsViewController.swift */; };
+		D5353C032F715DB7888A6B00 /* EducationInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334D040B3DF16D133097889D /* EducationInteractorOutput.swift */; };
+		DADB7347C137C1942D0F88BC /* EducationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC93C19D6192A4C3A3443C14 /* EducationViewController.swift */; };
+		E759BBAE7246313AE962F4F2 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D1B048C04DE1EFED564194 /* WelcomeViewController.swift */; };
+		F157EA5DCF5D456E15782351 /* WelcomeViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3FDA62CA908EAA1B7D5834 /* WelcomeViewOutput.swift */; };
+		F92C7DDB9B5BF3C550DCB671 /* EducationViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CFB746C9CDB91C1EA352B6 /* EducationViewInput.swift */; };
+		FA84C34C7F20BC8154E304AF /* EducationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FB7BAAF452341B1A70CAC2 /* EducationInteractor.swift */; };
+		FADC59BD635946F3083D1C30 /* EducationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC09AE01E60E5346176E70B /* EducationPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +67,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0635134B10DD81265173B765 /* WelcomeInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WelcomeInteractorInput.swift; sourceTree = "<group>"; };
+		13749BE8B2EE027A16B31648 /* SkillsViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SkillsViewInput.swift; sourceTree = "<group>"; };
+		1B1F3602C6D5482127C016F0 /* WelcomePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WelcomePresenter.swift; sourceTree = "<group>"; };
+		1F1CAD77C82866485ED92D4A /* WorkExperienceViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WorkExperienceViewController.swift; sourceTree = "<group>"; };
+		1FC09AE01E60E5346176E70B /* EducationPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EducationPresenter.swift; sourceTree = "<group>"; };
+		216C7BBB0493FC1C9B1B64A8 /* EducationCollectionMediator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EducationCollectionMediator.swift; sourceTree = "<group>"; };
+		252D4F9C3F301EFC152CD1B3 /* SkillsInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SkillsInteractorInput.swift; sourceTree = "<group>"; };
+		2BC001055A05D8146CAA6D3E /* SkillsCollectionMediator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SkillsCollectionMediator.swift; sourceTree = "<group>"; };
+		2C3FDA62CA908EAA1B7D5834 /* WelcomeViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WelcomeViewOutput.swift; sourceTree = "<group>"; };
+		334D040B3DF16D133097889D /* EducationInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EducationInteractorOutput.swift; sourceTree = "<group>"; };
+		35CFB746C9CDB91C1EA352B6 /* EducationViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EducationViewInput.swift; sourceTree = "<group>"; };
+		3B486336A7CCF0D58F1694AD /* WelcomeInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WelcomeInteractorOutput.swift; sourceTree = "<group>"; };
+		46A3E6C0E1FA55D5097E98CE /* SkillsInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SkillsInteractor.swift; sourceTree = "<group>"; };
+		47596BB5EF8C8642DF391FA5 /* SkillsViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SkillsViewOutput.swift; sourceTree = "<group>"; };
+		5ADD2C63EDB5DD6041F25AC7 /* WelcomeViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WelcomeViewInput.swift; sourceTree = "<group>"; };
+		6C75D25D2EB0AB0279C633B4 /* EducationInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EducationInteractorInput.swift; sourceTree = "<group>"; };
+		78538B6DDB2A2731B520DF30 /* WelcomeInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WelcomeInteractor.swift; sourceTree = "<group>"; };
+		86FA8176DA51955554E14C52 /* WorkExperiencePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WorkExperiencePresenter.swift; sourceTree = "<group>"; };
 		979E994624163E8F001A21EF /* CreativeCV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreativeCV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		979E994924163E8F001A21EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		979E994B24163E8F001A21EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		979E994D24163E8F001A21EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		979E995024163E8F001A21EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		979E995224163E94001A21EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		979E995524163E94001A21EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +98,21 @@
 		979E996724163E95001A21EF /* CreativeCVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CreativeCVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		979E996B24163E95001A21EF /* CreativeCVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreativeCVUITests.swift; sourceTree = "<group>"; };
 		979E996D24163E95001A21EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		979E997A2416868A001A21EF /* BaseModuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModuleViewController.swift; sourceTree = "<group>"; };
+		979E997E2416872A001A21EF /* ServiceFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFacade.swift; sourceTree = "<group>"; };
+		A0D1B048C04DE1EFED564194 /* WelcomeViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		AC93C19D6192A4C3A3443C14 /* EducationViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EducationViewController.swift; sourceTree = "<group>"; };
+		B872E063B958CEBAAA59FD12 /* WorkExperienceInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WorkExperienceInteractorInput.swift; sourceTree = "<group>"; };
+		B8ED3D93C3AAA044DC5F5A2D /* WorkExperienceViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WorkExperienceViewInput.swift; sourceTree = "<group>"; };
+		BD82B79C53767873F470B7AC /* SkillsInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SkillsInteractorOutput.swift; sourceTree = "<group>"; };
+		C290C0D4B102686AA2250C22 /* WorkExperienceInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WorkExperienceInteractorOutput.swift; sourceTree = "<group>"; };
+		D02CA0B3BB65F09686C043C6 /* SkillsPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SkillsPresenter.swift; sourceTree = "<group>"; };
+		DEEF736EFCBE80E436882743 /* WorkExperienceCollectionMediator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WorkExperienceCollectionMediator.swift; sourceTree = "<group>"; };
+		E16A26BB7BB007C2682E5076 /* WorkExperienceViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WorkExperienceViewOutput.swift; sourceTree = "<group>"; };
+		E86D577564439DAC590CA10C /* SkillsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SkillsViewController.swift; sourceTree = "<group>"; };
+		EABB7474121DB2D127C8C3F2 /* WorkExperienceInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WorkExperienceInteractor.swift; sourceTree = "<group>"; };
+		F6FB7BAAF452341B1A70CAC2 /* EducationInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EducationInteractor.swift; sourceTree = "<group>"; };
+		FF3B3E2C93172BF45349616D /* EducationViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EducationViewOutput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,13 +140,140 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02B8B377BFA48DB82375B485 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				979E99792416866E001A21EF /* Base */,
+				E73EE757EFF3ABD3FE506F59 /* Welcome */,
+				65B7AFAFD2EDCA85051E5414 /* Skills */,
+				4EC160966F188726444A6A08 /* Education */,
+				1E05B6CA0F1B811276E153A9 /* WorkExperience */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		03A407EE0CC507D7912618E7 /* ViewLayer */ = {
+			isa = PBXGroup;
+			children = (
+				13749BE8B2EE027A16B31648 /* SkillsViewInput.swift */,
+				E86D577564439DAC590CA10C /* SkillsViewController.swift */,
+			);
+			name = ViewLayer;
+			path = ViewLayer;
+			sourceTree = "<group>";
+		};
+		09B2AA22D3C87238A6104261 /* CollectionMediator */ = {
+			isa = PBXGroup;
+			children = (
+				216C7BBB0493FC1C9B1B64A8 /* EducationCollectionMediator.swift */,
+			);
+			name = CollectionMediator;
+			path = CollectionMediator;
+			sourceTree = "<group>";
+		};
+		1E05B6CA0F1B811276E153A9 /* WorkExperience */ = {
+			isa = PBXGroup;
+			children = (
+				CC32CB4320139BD486B4B043 /* ViewLayer */,
+				70472EC3CE0DD3D69E271923 /* Presenter */,
+				DE70E040BFE659D86566281E /* Interactor */,
+				B793D3F8B065CDA5C619731C /* CollectionMediator */,
+			);
+			name = WorkExperience;
+			path = WorkExperience;
+			sourceTree = "<group>";
+		};
+		1FC39E077F2BE89AFB7B7BDD /* ViewLayer */ = {
+			isa = PBXGroup;
+			children = (
+				5ADD2C63EDB5DD6041F25AC7 /* WelcomeViewInput.swift */,
+				A0D1B048C04DE1EFED564194 /* WelcomeViewController.swift */,
+			);
+			path = ViewLayer;
+			sourceTree = "<group>";
+		};
+		24C9DAD60F66B01CCCB5EC38 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				0635134B10DD81265173B765 /* WelcomeInteractorInput.swift */,
+				78538B6DDB2A2731B520DF30 /* WelcomeInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		4EC160966F188726444A6A08 /* Education */ = {
+			isa = PBXGroup;
+			children = (
+				5E9DFAEA520FEBFB1DA084D1 /* ViewLayer */,
+				E3FA9042B6A22131B7013D29 /* Presenter */,
+				AFFA2291CCC99CFC7044458A /* Interactor */,
+				09B2AA22D3C87238A6104261 /* CollectionMediator */,
+			);
+			name = Education;
+			path = Education;
+			sourceTree = "<group>";
+		};
+		5DFFC1CC9ED0D93775C9F99A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				252D4F9C3F301EFC152CD1B3 /* SkillsInteractorInput.swift */,
+				46A3E6C0E1FA55D5097E98CE /* SkillsInteractor.swift */,
+			);
+			name = Interactor;
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		5E9DFAEA520FEBFB1DA084D1 /* ViewLayer */ = {
+			isa = PBXGroup;
+			children = (
+				35CFB746C9CDB91C1EA352B6 /* EducationViewInput.swift */,
+				AC93C19D6192A4C3A3443C14 /* EducationViewController.swift */,
+			);
+			name = ViewLayer;
+			path = ViewLayer;
+			sourceTree = "<group>";
+		};
+		65B7AFAFD2EDCA85051E5414 /* Skills */ = {
+			isa = PBXGroup;
+			children = (
+				03A407EE0CC507D7912618E7 /* ViewLayer */,
+				6F7096C2FF76B3A7F1FD1BF2 /* Presenter */,
+				5DFFC1CC9ED0D93775C9F99A /* Interactor */,
+				C95691D3AD810EA31C2EBA1F /* CollectionMediator */,
+			);
+			name = Skills;
+			path = Skills;
+			sourceTree = "<group>";
+		};
+		6F7096C2FF76B3A7F1FD1BF2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				47596BB5EF8C8642DF391FA5 /* SkillsViewOutput.swift */,
+				D02CA0B3BB65F09686C043C6 /* SkillsPresenter.swift */,
+				BD82B79C53767873F470B7AC /* SkillsInteractorOutput.swift */,
+			);
+			name = Presenter;
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		70472EC3CE0DD3D69E271923 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E16A26BB7BB007C2682E5076 /* WorkExperienceViewOutput.swift */,
+				86FA8176DA51955554E14C52 /* WorkExperiencePresenter.swift */,
+				C290C0D4B102686AA2250C22 /* WorkExperienceInteractorOutput.swift */,
+			);
+			name = Presenter;
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		979E993D24163E8F001A21EF = {
 			isa = PBXGroup;
 			children = (
 				979E994824163E8F001A21EF /* CreativeCV */,
-				979E995F24163E95001A21EF /* CreativeCVTests */,
-				979E996A24163E95001A21EF /* CreativeCVUITests */,
-				979E994724163E8F001A21EF /* Products */,
+				979E997D241686E1001A21EF /* Additional */,
+				979E997C241686BE001A21EF /* Managers */,
+				02B8B377BFA48DB82375B485 /* Modules */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +285,7 @@
 				979E996724163E95001A21EF /* CreativeCVUITests.xctest */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		979E994824163E8F001A21EF /* CreativeCV */ = {
@@ -101,7 +293,6 @@
 			children = (
 				979E994924163E8F001A21EF /* AppDelegate.swift */,
 				979E994B24163E8F001A21EF /* SceneDelegate.swift */,
-				979E994D24163E8F001A21EF /* ViewController.swift */,
 				979E994F24163E8F001A21EF /* Main.storyboard */,
 				979E995224163E94001A21EF /* Assets.xcassets */,
 				979E995424163E94001A21EF /* LaunchScreen.storyboard */,
@@ -125,7 +316,113 @@
 				979E996B24163E95001A21EF /* CreativeCVUITests.swift */,
 				979E996D24163E95001A21EF /* Info.plist */,
 			);
+			name = CreativeCVUITests;
+			sourceTree = "<group>";
+		};
+		979E99792416866E001A21EF /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				979E997A2416868A001A21EF /* BaseModuleViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		979E997C241686BE001A21EF /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				979E997E2416872A001A21EF /* ServiceFacade.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		979E997D241686E1001A21EF /* Additional */ = {
+			isa = PBXGroup;
+			children = (
+				979E994724163E8F001A21EF /* Products */,
+				979E996A24163E95001A21EF /* CreativeCVUITests */,
+				979E995F24163E95001A21EF /* CreativeCVTests */,
+			);
+			name = Additional;
 			path = CreativeCVUITests;
+			sourceTree = "<group>";
+		};
+		AFFA2291CCC99CFC7044458A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				6C75D25D2EB0AB0279C633B4 /* EducationInteractorInput.swift */,
+				F6FB7BAAF452341B1A70CAC2 /* EducationInteractor.swift */,
+			);
+			name = Interactor;
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B793D3F8B065CDA5C619731C /* CollectionMediator */ = {
+			isa = PBXGroup;
+			children = (
+				DEEF736EFCBE80E436882743 /* WorkExperienceCollectionMediator.swift */,
+			);
+			name = CollectionMediator;
+			path = CollectionMediator;
+			sourceTree = "<group>";
+		};
+		C95691D3AD810EA31C2EBA1F /* CollectionMediator */ = {
+			isa = PBXGroup;
+			children = (
+				2BC001055A05D8146CAA6D3E /* SkillsCollectionMediator.swift */,
+			);
+			name = CollectionMediator;
+			path = CollectionMediator;
+			sourceTree = "<group>";
+		};
+		CC32CB4320139BD486B4B043 /* ViewLayer */ = {
+			isa = PBXGroup;
+			children = (
+				B8ED3D93C3AAA044DC5F5A2D /* WorkExperienceViewInput.swift */,
+				1F1CAD77C82866485ED92D4A /* WorkExperienceViewController.swift */,
+			);
+			name = ViewLayer;
+			path = ViewLayer;
+			sourceTree = "<group>";
+		};
+		DE70E040BFE659D86566281E /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B872E063B958CEBAAA59FD12 /* WorkExperienceInteractorInput.swift */,
+				EABB7474121DB2D127C8C3F2 /* WorkExperienceInteractor.swift */,
+			);
+			name = Interactor;
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		E3FA9042B6A22131B7013D29 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FF3B3E2C93172BF45349616D /* EducationViewOutput.swift */,
+				1FC09AE01E60E5346176E70B /* EducationPresenter.swift */,
+				334D040B3DF16D133097889D /* EducationInteractorOutput.swift */,
+			);
+			name = Presenter;
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E73EE757EFF3ABD3FE506F59 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				1FC39E077F2BE89AFB7B7BDD /* ViewLayer */,
+				EE023E504D76788B6B8F226A /* Presenter */,
+				24C9DAD60F66B01CCCB5EC38 /* Interactor */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		EE023E504D76788B6B8F226A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2C3FDA62CA908EAA1B7D5834 /* WelcomeViewOutput.swift */,
+				1B1F3602C6D5482127C016F0 /* WelcomePresenter.swift */,
+				3B486336A7CCF0D58F1694AD /* WelcomeInteractorOutput.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +556,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				979E994E24163E8F001A21EF /* ViewController.swift in Sources */,
 				979E994A24163E8F001A21EF /* AppDelegate.swift in Sources */,
 				979E994C24163E8F001A21EF /* SceneDelegate.swift in Sources */,
+				C146DCFB0A8D44AD9F8A1949 /* WelcomeViewInput.swift in Sources */,
+				E759BBAE7246313AE962F4F2 /* WelcomeViewController.swift in Sources */,
+				F157EA5DCF5D456E15782351 /* WelcomeViewOutput.swift in Sources */,
+				4C58CAB6B2E75C478F054CBF /* WelcomePresenter.swift in Sources */,
+				979E997F2416872A001A21EF /* ServiceFacade.swift in Sources */,
+				979E997B2416868A001A21EF /* BaseModuleViewController.swift in Sources */,
+				9AA6FC1A7E1B6E962E64EFFE /* WelcomeInteractorOutput.swift in Sources */,
+				B3B2D948A86F6E701A801772 /* WelcomeInteractorInput.swift in Sources */,
+				79B9A009B9E47E807B7C26F0 /* WelcomeInteractor.swift in Sources */,
+				2C13FA7A0C293E9092AB2E9C /* SkillsViewInput.swift in Sources */,
+				D4C6A64153930513FEDA7D9F /* SkillsViewController.swift in Sources */,
+				29368A86AA94AA5604B87411 /* SkillsViewOutput.swift in Sources */,
+				1663EAB9810ABBC90D7606B0 /* SkillsPresenter.swift in Sources */,
+				B7A6633EDF22B29BD7EACA3C /* SkillsInteractorOutput.swift in Sources */,
+				081828D645BC740CB76E4544 /* SkillsInteractorInput.swift in Sources */,
+				3B2A5A05A56E1A780031C82A /* SkillsInteractor.swift in Sources */,
+				4B572E666DE055B4BFF1B8C9 /* SkillsCollectionMediator.swift in Sources */,
+				F92C7DDB9B5BF3C550DCB671 /* EducationViewInput.swift in Sources */,
+				DADB7347C137C1942D0F88BC /* EducationViewController.swift in Sources */,
+				551333471F8E9B3A704420BD /* EducationViewOutput.swift in Sources */,
+				FADC59BD635946F3083D1C30 /* EducationPresenter.swift in Sources */,
+				D5353C032F715DB7888A6B00 /* EducationInteractorOutput.swift in Sources */,
+				B061A5EE1F7EAD390923839D /* EducationInteractorInput.swift in Sources */,
+				FA84C34C7F20BC8154E304AF /* EducationInteractor.swift in Sources */,
+				CDA7D2B3113B1371F7880EDF /* EducationCollectionMediator.swift in Sources */,
+				76B17C05CE8CA35865574468 /* WorkExperienceViewInput.swift in Sources */,
+				78FDFC8D9DC0A29CFA6E6DFE /* WorkExperienceViewController.swift in Sources */,
+				C2B22124C857054C8030B3AF /* WorkExperienceViewOutput.swift in Sources */,
+				14671835A0871B1D0DCA6E63 /* WorkExperiencePresenter.swift in Sources */,
+				6AB2698C4CB7C1F08E5CF016 /* WorkExperienceInteractorOutput.swift in Sources */,
+				7B7FEA4711AF4162A8CB2334 /* WorkExperienceInteractorInput.swift in Sources */,
+				0FB2651FF74E9A3E0EFCFFA6 /* WorkExperienceInteractor.swift in Sources */,
+				29C67261EA89286B6C8FE2A0 /* WorkExperienceCollectionMediator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
