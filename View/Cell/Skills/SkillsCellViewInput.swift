@@ -10,4 +10,8 @@ import UIKit
 
 protocol SkillsCellViewInput: UITableViewCell {
     
+    func update(name: String)
+    func update(progress: Float)
+    func updateBadge(hidden: Bool)
+
 }

@@ -10,4 +10,6 @@ import Foundation
 
 protocol WelcomeInteractorOutput: class {
 
+    func dataDidLoad()
+    
 }

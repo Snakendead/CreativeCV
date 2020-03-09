@@ -12,7 +12,7 @@ class BaseModuleViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupDependencies()
         // Do any additional setup after loading the view.
     }
     

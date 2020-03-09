@@ -37,7 +37,7 @@
                                     <constraint firstAttribute="width" secondItem="UKw-OO-jBY" secondAttribute="height" multiplier="1:1" id="Dp6-6c-il7"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="It's me! Yo!" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8FN-Vx-vYI">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8FN-Vx-vYI">
                                 <rect key="frame" x="83" y="362.5" width="248" height="64"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
@@ -48,9 +48,9 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <stackView opaque="NO" contentMode="scaleAspectFill" distribution="equalCentering" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="NRO-Ii-39P">
-                                <rect key="frame" x="82" y="446.5" width="250" height="50"/>
+                                <rect key="frame" x="207" y="446.5" width="0.0" height="50"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MkH-4x-vnN">
+                                    <button hidden="YES" opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MkH-4x-vnN">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="iAG-S4-Q3e"/>
@@ -61,8 +61,8 @@
                                             <action selector="callButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sy3-sF-wi8"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSx-3M-UAv">
-                                        <rect key="frame" x="100" y="0.0" width="50" height="50"/>
+                                    <button hidden="YES" opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSx-3M-UAv">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="MmG-9g-kQs"/>
                                             <constraint firstAttribute="width" constant="50" id="RU6-2z-fPC"/>
@@ -72,8 +72,8 @@
                                             <action selector="emailButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9bK-vc-d7c"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Igu-Cv-i34">
-                                        <rect key="frame" x="200" y="0.0" width="50" height="50"/>
+                                    <button hidden="YES" opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Igu-Cv-i34">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="tuG-Ph-6bx"/>
                                             <constraint firstAttribute="height" constant="50" id="y1o-mj-prb"/>
@@ -88,7 +88,7 @@
                                     <constraint firstAttribute="height" constant="50" id="Oxh-mV-1bO"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uVF-YW-XQm">
+                            <button hidden="YES" opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uVF-YW-XQm">
                                 <rect key="frame" x="50" y="712" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="JhX-n5-XTN"/>
@@ -99,7 +99,7 @@
                                     <segue destination="8LL-bb-EwX" kind="show" id="vhZ-gK-Mr0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SG2-Yw-JQP">
+                            <button hidden="YES" opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SG2-Yw-JQP">
                                 <rect key="frame" x="264" y="712" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="iqT-59-Vko"/>
@@ -110,11 +110,15 @@
                                     <segue destination="aVx-Rt-kis" kind="show" id="0DI-3J-wSI"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="ack-8B-FSW">
+                                <rect key="frame" x="188.5" y="434.5" width="37" height="37"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="NRO-Ii-39P" firstAttribute="top" secondItem="8FN-Vx-vYI" secondAttribute="bottom" constant="20" id="0QZ-EB-hu3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SG2-Yw-JQP" secondAttribute="trailing" constant="50" id="5QL-TQ-yT8"/>
+                            <constraint firstItem="ack-8B-FSW" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="6kn-xR-JrE"/>
                             <constraint firstItem="NRO-Ii-39P" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ccu-9l-l6F"/>
                             <constraint firstItem="UKw-OO-jBY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="MMk-cs-XaA"/>
                             <constraint firstItem="8FN-Vx-vYI" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="S00-fz-d50"/>
@@ -124,6 +128,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uVF-YW-XQm" secondAttribute="bottom" constant="50" id="acy-Ew-ALa"/>
                             <constraint firstItem="8FN-Vx-vYI" firstAttribute="width" secondItem="UKw-OO-jBY" secondAttribute="width" id="dXi-Wo-Ld2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SG2-Yw-JQP" secondAttribute="bottom" constant="50" id="fk0-xE-fMS"/>
+                            <constraint firstItem="ack-8B-FSW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="g4A-2p-3K3"/>
                             <constraint firstItem="uVF-YW-XQm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="wQi-Wu-2xh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -131,6 +136,7 @@
                     <navigationItem key="navigationItem" id="mXn-MS-QQA"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="ack-8B-FSW" id="80R-tJ-20k"/>
                         <outlet property="callButton" destination="MkH-4x-vnN" id="QR3-R2-4ni"/>
                         <outlet property="emailButton" destination="eSx-3M-UAv" id="nFk-U7-At9"/>
                         <outlet property="experienceButton" destination="SG2-Yw-JQP" id="Q15-4t-jdi"/>

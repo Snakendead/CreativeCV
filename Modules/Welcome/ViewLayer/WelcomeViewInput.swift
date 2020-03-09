@@ -10,4 +10,7 @@ import Foundation
 
 protocol WelcomeViewInput: class {
 
+    func showPage()
+    func showLoadingError()
+    
 }

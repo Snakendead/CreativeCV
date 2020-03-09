@@ -38,6 +38,17 @@ class DatabaseManager: NSObject {
         load(url: url)
     }
     
+    func getSkills() -> [SkillModel] {
+        return skills
+    }
+    
+    func getInfo() -> InfoModel? {
+        return infoModel
+    }
+    
+    func getWorks() -> [WorkExperienceModel] {
+        return experienceWorks
+    }
     //MARK: Private
     
     private func load(url: URL) {
@@ -134,7 +145,7 @@ class DatabaseManager: NSObject {
                 let end = dict["end"] as? String,
                 let company = dict["company"] as? String,
                 let info = dict["description"] as? String else {
-                    return
+                    continue
             }
 
             let object = WorkExperienceModel(with: company,
@@ -149,12 +160,13 @@ class DatabaseManager: NSObject {
     private func parseSkillsArray(dictArray: [[String: AnyObject]]) {
         for dict in dictArray {
             guard let name = dict["name"] as? String,
-                let grade = dict["grade"] as? Int,
+                let grade = dict["grade"] as? String,
                 let info = dict["description"] as? String else {
-                    return
+                    continue
             }
 
-            let object = SkillModel(with: name, grade: grade, info: info)
+            guard let gradeInt = Int(grade) else { continue }
+            let object = SkillModel(with: name, grade: gradeInt, info: info)
             skills.append(object)
         }
     }

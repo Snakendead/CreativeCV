@@ -10,4 +10,5 @@ import Foundation
 
 protocol SkillsInteractorOutput: class {
 
+    func didFetchData(_ data: [SkillModel])
 }

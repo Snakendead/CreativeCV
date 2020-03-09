@@ -10,4 +10,5 @@ import Foundation
 
 protocol WelcomeInteractorInput: class {
 
+    func loadData()
 }

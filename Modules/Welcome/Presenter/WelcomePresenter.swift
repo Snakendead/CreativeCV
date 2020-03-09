@@ -32,18 +32,35 @@ class WelcomePresenter: NSObject, WelcomeViewOutput, WelcomeInteractorOutput {
     }
 
     //MARK: WelcomeInteractorOutput methods
+    
+    internal func dataDidLoad() {
+        DispatchQueue.main.async {
+            self.viewInput.showPage()
+        }
+    }
+    
+    //MARK: WelcomeViewOutput methods
 
     internal func viewIsReady() {
-
+        interactor.loadData()
     }
 
     internal func viewWillAppear() {
 
     }
 
-    //MARK:
-
-    internal func getViewLayer() -> Any {
-        return viewInput
+    //MARK: Actions
+    
+    func callDidTapped() {
+        
     }
+    
+    func locationDidTapped() {
+        
+    }
+    
+    func emailDidTapped() {
+        
+    }
+
 }

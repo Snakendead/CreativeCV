@@ -13,4 +13,9 @@ protocol WelcomeViewOutput: class {
     func viewIsReady()
     func viewWillAppear()
 
+    //MARK: actions
+    
+    func callDidTapped()
+    func locationDidTapped()
+    func emailDidTapped()
 }

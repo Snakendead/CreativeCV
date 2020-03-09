@@ -12,8 +12,15 @@ class SkillsPresenter: NSObject, SkillsViewOutput, SkillsInteractorOutput {
 
     weak var collectionMediator: SkillsCollectionMediator!
     weak var viewInput: SkillsViewInput!
-
+    
     var interactor: SkillsInteractorInput!
+    
+    private var badgeHidden: [Int: Bool] = [:]
+    private var collectionData: [SkillModel] = [] {
+        didSet (value) {
+            collectionMediator.dataCount = collectionData.count
+        }
+    }
 
     init(viewInput: SkillsViewInput, collectionMediator: SkillsCollectionMediator) {
         super.init()
@@ -34,15 +41,25 @@ class SkillsPresenter: NSObject, SkillsViewOutput, SkillsInteractorOutput {
             [weak self]
             (cellInput, indexPath) in
             guard let self_ = self else { return }
-//            _ = self_.collectionData[indexPath.row]
-
+            let skill = self_.collectionData[indexPath.row]
+            cellInput.update(name: skill.name)
+            
+            let progress: Float = Float(skill.grade) / 10.0
+            cellInput.update(progress: progress)
+            
+            if self_.badgeHidden[indexPath.row] ?? false {
+                cellInput.updateBadge(hidden: true)
+            }
         }
 
         collectionMediator.cellSelectionClosure = {
             [weak self]
-            (indexPath) in
+            (cellInput, indexPath) in
             guard let self_ = self else { return }
-//            _ = self_.collectionData[indexPath.row]
+            _ = self_.collectionData[indexPath.row]
+            self_.badgeHidden[indexPath.row] = true
+            
+            cellInput.updateBadge(hidden: true)
 
         }
 
@@ -51,8 +68,14 @@ class SkillsPresenter: NSObject, SkillsViewOutput, SkillsInteractorOutput {
 
     //MARK: SkillsInteractorOutput methods
 
-    internal func viewIsReady() {
+    internal func didFetchData(_ data: [SkillModel]) {
+        self.collectionData = data
+    }
+    
+    //MARK: SkillsViewOutput methods
 
+    internal func viewIsReady() {
+        interactor.loadData()
     }
 
     internal func viewWillAppear() {
@@ -61,7 +84,4 @@ class SkillsPresenter: NSObject, SkillsViewOutput, SkillsInteractorOutput {
 
     //MARK:
 
-    internal func getViewLayer() -> Any {
-        return viewInput
-    }
 }

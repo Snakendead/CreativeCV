@@ -18,4 +18,9 @@ class SkillsInteractor: NSObject, SkillsInteractorInput {
         self.output = output
         super.init()
     }
+    
+    func loadData() {
+        let skills = serviceFacade.databaseManager.getSkills()
+        output.didFetchData(skills)
+    }
 }

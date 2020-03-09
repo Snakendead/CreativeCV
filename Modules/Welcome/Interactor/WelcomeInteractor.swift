@@ -18,4 +18,14 @@ class WelcomeInteractor: NSObject, WelcomeInteractorInput {
         self.output = output
         super.init()
     }
+    
+    func loadData() {
+        serviceFacade.databaseManager.downloadDatabaseFile(with: {
+            [weak self] in
+            guard let self_ = self else { return }
+            self_.output.dataDidLoad()
+        }) { (error) in
+            
+        }
+    }
 }

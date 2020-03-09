@@ -10,4 +10,5 @@ import Foundation
 
 protocol SkillsInteractorInput: class {
 
+    func loadData()
 }

@@ -24,6 +24,10 @@ class WelcomeViewController: BaseModuleViewController, WelcomeViewInput {
     @IBOutlet weak var skillsButton: UIButton!
     @IBOutlet weak var experienceButton: UIButton!
     
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
+    private var printEffectTimer: Timer? = nil
+    
     //MARK: Initialization
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -47,7 +51,13 @@ class WelcomeViewController: BaseModuleViewController, WelcomeViewInput {
     }
 
     private func setupUI() {
-
+        photoImageView.layer.cornerRadius = 10.0
+        
+        activityIndicator.startAnimating()
+        photoTopConstraint.constant = -300
+        UIView.performWithoutAnimation {
+            self.view.layoutIfNeeded()
+        }
     }
 
     private func setupActions() {
@@ -61,22 +71,50 @@ class WelcomeViewController: BaseModuleViewController, WelcomeViewInput {
 
     //MARK: WelcomeViewInput methods
 
+    func showPage() {
+        activityIndicator.stopAnimating()
+        
+        photoTopConstraint.constant = 20
+        
+        self.callButton.isHidden = false
+        self.emailButton.isHidden = false
+        self.locationButton.isHidden = false
+        self.skillsButton.isHidden = false
+        self.experienceButton.isHidden = false
+
+        UIView.animate(withDuration: 1.0,
+                       delay: 0.0,
+                       options: UIView.AnimationOptions.curveEaseInOut,
+                       animations: {
+                        self.callButton.alpha = 1.0
+                        self.emailButton.alpha = 1.0
+                        self.locationButton.alpha = 1.0
+                        self.skillsButton.alpha = 1.0
+                        self.experienceButton.alpha = 1.0
+                        
+                        self.view.layoutIfNeeded()
+        }) { (_) in
+            
+        }
+        
+    }
+    
+    func showLoadingError() {
+        
+    }
+    
     //MARK: Actions
     
     @IBAction func callButtonAction(_ sender: UIButton) {
-        
+        output.callDidTapped()
     }
     
     @IBAction func emailButtonAction(_ sender: UIButton) {
-        
+        output.emailDidTapped()
     }
     
     @IBAction func locationButtonAction(_ sender: UIButton) {
-        ServiceFacade.shared.databaseManager.downloadDatabaseFile(with: {
-            
-        }) { (error) in
-            
-        }
+        output.locationDidTapped()
     }
         
 }
