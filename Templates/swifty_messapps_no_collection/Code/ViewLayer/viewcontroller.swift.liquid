@@ -1,0 +1,52 @@
+//
+//  {{ module_info.name }}{{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import UIKit
+
+class {{ module_info.name }}ViewController: BaseModuleViewController, {{module_info.name}}ViewInput {
+
+    var output: {{ module_info.name }}ViewOutput!
+
+    //MARK: Initialization
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        self.output = {{ module_info.name }}Presenter(viewInput: self)
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        self.output = {{ module_info.name }}Presenter(viewInput: self)
+    }
+
+    override func setupDependencies() {
+
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupUI()
+        setupActions()
+        output.viewIsReady()
+    }
+
+    private func setupUI() {
+
+    }
+
+    private func setupActions() {
+
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        output.viewWillAppear()
+    }
+
+    //MARK: {{ module_info.name }}ViewInput methods
+
+}

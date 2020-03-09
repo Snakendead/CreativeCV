@@ -1,0 +1,49 @@
+//
+//  {{ module_info.name }}{{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import Foundation
+
+class {{ module_info.name }}Presenter: NSObject, {{ module_info.name }}ViewOutput, {{ module_info.name }}InteractorOutput {
+
+    weak var viewInput: {{ module_info.name }}ViewInput!
+
+    var interactor: {{ module_info.name }}InteractorInput!
+
+    init(viewInput: {{ module_info.name }}ViewInput) {
+        super.init()
+        self.viewInput = viewInput
+        self.interactor = {{ module_info.name }}Interactor(output: self)
+
+        initialize()
+        setupDependencies()
+    }
+
+    func initialize() {
+
+    }
+
+    func setupDependencies() {
+
+    }
+
+    //MARK: {{ module_info.name }}InteractorOutput methods
+
+    internal func viewIsReady() {
+
+    }
+
+    internal func viewWillAppear() {
+
+    }
+
+    //MARK:
+
+    internal func getViewLayer() -> Any {
+        return viewInput
+    }
+}

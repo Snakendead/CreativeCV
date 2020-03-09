@@ -1,0 +1,55 @@
+//
+//  {{ module_info.name }}{{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import UIKit
+
+class {{ module_info.name }}ViewController: BaseModuleViewController, {{module_info.name}}ViewInput {
+
+    var output: {{ module_info.name }}ViewOutput!
+    var collectionMediator: {{ module_info.name }}CollectionMediator!
+
+    //MARK: Initialization
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        self.collectionMediator = {{ module_info.name }}CollectionMediator()
+        self.output = {{ module_info.name }}Presenter(viewInput: self, collectionMediator: self.collectionMediator)
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        self.collectionMediator = {{ module_info.name }}CollectionMediator()
+        self.output = {{ module_info.name }}Presenter(viewInput: self, collectionMediator: self.collectionMediator)
+    }
+
+    override func setupDependencies() {
+//        collectionMediator.fillCollection(collection)
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupUI()
+        setupActions()
+        output.viewIsReady()
+    }
+
+    private func setupUI() {
+
+    }
+
+    private func setupActions() {
+
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        output.viewWillAppear()
+    }
+
+    //MARK: {{ module_info.name }}ViewInput methods
+
+}
