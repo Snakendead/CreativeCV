@@ -32,13 +32,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" translatesAutoresizingMaskIntoConstraints="NO" id="UKw-OO-jBY">
-                                <rect key="frame" x="83" y="94" width="248.00000000000023" height="248.50000000000023"/>
+                                <rect key="frame" x="83" y="94" width="248" height="248.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="UKw-OO-jBY" secondAttribute="height" multiplier="1:1" id="Dp6-6c-il7"/>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="It's me! Yo!" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8FN-Vx-vYI">
-                                <rect key="frame" x="83" y="359" width="248" height="64"/>
+                                <rect key="frame" x="83" y="362.5" width="248" height="64"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="JcG-g2-t3C"/>
@@ -47,20 +47,41 @@
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="24"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="NRO-Ii-39P">
-                                <rect key="frame" x="24" y="431" width="366" height="50"/>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" distribution="equalCentering" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="NRO-Ii-39P">
+                                <rect key="frame" x="82" y="446.5" width="250" height="50"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MkH-4x-vnN">
-                                        <rect key="frame" x="0.0" y="0.0" width="122" height="50"/>
-                                        <state key="normal" title="Call"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MkH-4x-vnN">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="iAG-S4-Q3e"/>
+                                            <constraint firstAttribute="height" constant="50" id="tNg-er-x4r"/>
+                                        </constraints>
+                                        <state key="normal" title="Call" image="phone_icon"/>
+                                        <connections>
+                                            <action selector="callButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sy3-sF-wi8"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSx-3M-UAv">
-                                        <rect key="frame" x="122" y="0.0" width="122" height="50"/>
-                                        <state key="normal" title="Email"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSx-3M-UAv">
+                                        <rect key="frame" x="100" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="MmG-9g-kQs"/>
+                                            <constraint firstAttribute="width" constant="50" id="RU6-2z-fPC"/>
+                                        </constraints>
+                                        <state key="normal" title="Email" image="email_icon"/>
+                                        <connections>
+                                            <action selector="emailButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9bK-vc-d7c"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Igu-Cv-i34">
-                                        <rect key="frame" x="244" y="0.0" width="122" height="50"/>
-                                        <state key="normal" title="Location"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Igu-Cv-i34">
+                                        <rect key="frame" x="200" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="tuG-Ph-6bx"/>
+                                            <constraint firstAttribute="height" constant="50" id="y1o-mj-prb"/>
+                                        </constraints>
+                                        <state key="normal" title="Location" image="location_icon"/>
+                                        <connections>
+                                            <action selector="locationButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kvw-iW-mXM"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -92,25 +113,33 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="NRO-Ii-39P" firstAttribute="top" secondItem="8FN-Vx-vYI" secondAttribute="bottom" constant="8" id="0QZ-EB-hu3"/>
+                            <constraint firstItem="NRO-Ii-39P" firstAttribute="top" secondItem="8FN-Vx-vYI" secondAttribute="bottom" constant="20" id="0QZ-EB-hu3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SG2-Yw-JQP" secondAttribute="trailing" constant="50" id="5QL-TQ-yT8"/>
                             <constraint firstItem="NRO-Ii-39P" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ccu-9l-l6F"/>
                             <constraint firstItem="UKw-OO-jBY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="MMk-cs-XaA"/>
                             <constraint firstItem="8FN-Vx-vYI" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="S00-fz-d50"/>
-                            <constraint firstItem="NRO-Ii-39P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="WNu-Bb-5rb"/>
                             <constraint firstItem="UKw-OO-jBY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="WOs-lH-DOb"/>
                             <constraint firstItem="UKw-OO-jBY" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.6" id="YG5-2k-dtC"/>
-                            <constraint firstItem="8FN-Vx-vYI" firstAttribute="top" secondItem="UKw-OO-jBY" secondAttribute="bottom" constant="16.5" id="ZZd-sm-ucd"/>
+                            <constraint firstItem="8FN-Vx-vYI" firstAttribute="top" secondItem="UKw-OO-jBY" secondAttribute="bottom" constant="20" id="ZZd-sm-ucd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uVF-YW-XQm" secondAttribute="bottom" constant="50" id="acy-Ew-ALa"/>
                             <constraint firstItem="8FN-Vx-vYI" firstAttribute="width" secondItem="UKw-OO-jBY" secondAttribute="width" id="dXi-Wo-Ld2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SG2-Yw-JQP" secondAttribute="bottom" constant="50" id="fk0-xE-fMS"/>
                             <constraint firstItem="uVF-YW-XQm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="wQi-Wu-2xh"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NRO-Ii-39P" secondAttribute="trailing" constant="24" id="y1V-Cm-qgl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="mXn-MS-QQA"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="callButton" destination="MkH-4x-vnN" id="QR3-R2-4ni"/>
+                        <outlet property="emailButton" destination="eSx-3M-UAv" id="nFk-U7-At9"/>
+                        <outlet property="experienceButton" destination="SG2-Yw-JQP" id="Q15-4t-jdi"/>
+                        <outlet property="locationButton" destination="Igu-Cv-i34" id="IA4-N2-fD9"/>
+                        <outlet property="nameTextView" destination="8FN-Vx-vYI" id="upJ-J6-sfc"/>
+                        <outlet property="photoImageView" destination="UKw-OO-jBY" id="8Jl-Qf-Dky"/>
+                        <outlet property="photoTopConstraint" destination="MMk-cs-XaA" id="mEv-tP-IEo"/>
+                        <outlet property="skillsButton" destination="uVF-YW-XQm" id="8Uo-xr-QKT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -140,6 +169,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="vuY-jz-9c8"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="tableView" destination="g97-UV-CDo" id="Gj3-WF-N0P"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="286-ZG-ICF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -169,6 +201,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="kej-cH-ZJT"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="tableView" destination="JAX-dR-Bsd" id="2BM-71-aKZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kAo-g6-Eu9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -176,6 +211,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="email_icon" width="256" height="256"/>
+        <image name="location_icon" width="736" height="980"/>
+        <image name="phone_icon" width="512" height="512"/>
         <image name="photo" width="996" height="996"/>
     </resources>
 </document>

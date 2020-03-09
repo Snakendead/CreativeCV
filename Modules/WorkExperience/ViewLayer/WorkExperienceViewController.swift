@@ -13,6 +13,8 @@ class WorkExperienceViewController: BaseModuleViewController, WorkExperienceView
     var output: WorkExperienceViewOutput!
     var collectionMediator: WorkExperienceCollectionMediator!
 
+    @IBOutlet weak var tableView: UITableView!
+    
     //MARK: Initialization
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -27,7 +29,7 @@ class WorkExperienceViewController: BaseModuleViewController, WorkExperienceView
     }
 
     override func setupDependencies() {
-//        collectionMediator.fillCollection(collection)
+        collectionMediator.fillCollection(tableView)
     }
 
     override func viewDidLoad() {

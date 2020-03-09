@@ -13,6 +13,8 @@ class SkillsViewController: BaseModuleViewController, SkillsViewInput {
     var output: SkillsViewOutput!
     var collectionMediator: SkillsCollectionMediator!
 
+    @IBOutlet weak var tableView: UITableView!
+    
     //MARK: Initialization
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -27,7 +29,7 @@ class SkillsViewController: BaseModuleViewController, SkillsViewInput {
     }
 
     override func setupDependencies() {
-//        collectionMediator.fillCollection(collection)
+        collectionMediator.fillCollection(tableView)
     }
 
     override func viewDidLoad() {

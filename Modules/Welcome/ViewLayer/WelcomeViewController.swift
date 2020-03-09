@@ -12,6 +12,18 @@ class WelcomeViewController: BaseModuleViewController, WelcomeViewInput {
 
     var output: WelcomeViewOutput!
 
+    @IBOutlet weak var photoImageView: UIImageView!
+    @IBOutlet weak var photoTopConstraint: NSLayoutConstraint!
+    
+    @IBOutlet weak var nameTextView: UITextView!
+    
+    @IBOutlet weak var callButton: UIButton!
+    @IBOutlet weak var emailButton: UIButton!
+    @IBOutlet weak var locationButton: UIButton!
+    
+    @IBOutlet weak var skillsButton: UIButton!
+    @IBOutlet weak var experienceButton: UIButton!
+    
     //MARK: Initialization
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -49,4 +61,22 @@ class WelcomeViewController: BaseModuleViewController, WelcomeViewInput {
 
     //MARK: WelcomeViewInput methods
 
+    //MARK: Actions
+    
+    @IBAction func callButtonAction(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func emailButtonAction(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func locationButtonAction(_ sender: UIButton) {
+        ServiceFacade.shared.databaseManager.downloadDatabaseFile(with: {
+            
+        }) { (error) in
+            
+        }
+    }
+        
 }

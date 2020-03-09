@@ -11,4 +11,6 @@ import UIKit
 class ServiceFacade: NSObject {
 
     static let shared = ServiceFacade()
+    
+    let databaseManager = DatabaseManager()
 }
