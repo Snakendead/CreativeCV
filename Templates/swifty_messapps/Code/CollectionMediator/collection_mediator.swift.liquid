@@ -1,0 +1,33 @@
+//
+//  {{ prefix }}{{ module_info.name }}{{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import UIKit
+
+class {{ module_info.name }}CollectionMediator: NSObject {
+
+    var dataCount: Int = 2
+    var fillCellData: ((_ cell: {{ module_info.name }}CellViewInput, _ indexPath: IndexPath) -> Void)?
+
+    var cellSelectionClosure: ((_ indexPath: IndexPath) -> Void)?
+
+    dynamic init(_ xibName: String) {
+        self.xibName = xibName
+        super.init()
+    }
+
+    private var xibName: String
+    private var tableView: UITableView!
+
+    func fillCollection(_ tableView: UITableView) {
+
+    }
+
+    func setupCollectionUI() {
+
+    }
+}
