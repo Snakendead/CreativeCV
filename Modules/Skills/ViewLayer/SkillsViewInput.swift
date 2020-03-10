@@ -10,4 +10,5 @@ import Foundation
 
 protocol SkillsViewInput: class {
 
+    func showSkillInfo(with text: String)
 }

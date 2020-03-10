@@ -14,19 +14,22 @@ class InfoModel: NSObject {
     let surname: String
     
     let phone: String
-    
+    let mail: String
+
     let locationLatitude: Double
     let locationLongitude: Double
     
     init(with name: String,
          surname: String,
          phone: String,
+         mail: String,
          locationLatitude: Double,
          locationLongitude: Double) {
 
         self.name = name
         self.surname = surname
         self.phone = phone
+        self.mail = mail
         self.locationLatitude = locationLatitude
         self.locationLongitude = locationLongitude
     }

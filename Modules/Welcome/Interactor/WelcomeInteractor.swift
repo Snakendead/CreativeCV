@@ -23,9 +23,15 @@ class WelcomeInteractor: NSObject, WelcomeInteractorInput {
         serviceFacade.databaseManager.downloadDatabaseFile(with: {
             [weak self] in
             guard let self_ = self else { return }
-            self_.output.dataDidLoad()
-        }) { (error) in
-            
+            guard let info = self_.serviceFacade.databaseManager.getInfo() else {
+                self_.output.dataLoadFailed("Info model ot loaded")
+                return
+            }
+            self_.output.dataDidLoad(info: info)
+        }) { [weak self]
+            (error) in
+            guard let self_ = self else { return }
+            self_.output.dataLoadFailed("Data not loaded")
         }
     }
 }

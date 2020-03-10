@@ -16,7 +16,7 @@ class DatabaseManager: NSObject {
     
     
     //TODO: move into build settings user defined
-    private let urlString = "https://gist.githubusercontent.com/Snakendead/9ce9cc098d06126c5491ddef2d2530fe/raw/42678529ceff99db90441fcefdf84e27204d1de5/gistfile1.txt"
+    private let urlString = "https://gist.githubusercontent.com/Snakendead/9ce9cc098d06126c5491ddef2d2530fe/raw/884a85a92fccbe763cf9442e8579d4177ae92ecd/gistfile1.txt"
     
     private var successCallback: (() -> Void)? = nil
     private var failureCallback: ((Error) -> Void)? = nil
@@ -124,16 +124,22 @@ class DatabaseManager: NSObject {
         guard let name = dict["name"] as? String,
             let surname = dict["surname"] as? String,
             let phone = dict["phone"] as? String,
-            let lat = dict["locationLat"] as? Double,
-            let lon = dict["locationLon"] as? Double else {
+            let mail = dict["mail"] as? String,
+            let lat = dict["locationLat"] as? String,
+            let lon = dict["locationLon"] as? String else {
                 return
+        }
+        
+        guard let latDouble = Double(lat), let lonDouble = Double(lon) else {
+            return
         }
         
         let info = InfoModel(with: name,
                              surname: surname,
                              phone: phone,
-                             locationLatitude: lat,
-                             locationLongitude: lon)
+                             mail: mail,
+                             locationLatitude: latDouble,
+                             locationLongitude: lonDouble)
         
         self.infoModel = info
     }

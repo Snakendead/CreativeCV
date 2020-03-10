@@ -54,4 +54,11 @@ class SkillsViewController: BaseModuleViewController, SkillsViewInput {
 
     //MARK: SkillsViewInput methods
 
+    func showSkillInfo(with text: String) {
+        let alert = UIAlertController(title: nil, message: text, preferredStyle: UIAlertController.Style.alert)
+        let cancelAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil)
+        
+        alert.addAction(cancelAction)
+        present(alert, animated: true, completion: nil)
+    }
 }

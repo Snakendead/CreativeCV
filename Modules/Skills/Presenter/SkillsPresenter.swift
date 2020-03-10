@@ -56,11 +56,11 @@ class SkillsPresenter: NSObject, SkillsViewOutput, SkillsInteractorOutput {
             [weak self]
             (cellInput, indexPath) in
             guard let self_ = self else { return }
-            _ = self_.collectionData[indexPath.row]
+            let skill = self_.collectionData[indexPath.row]
             self_.badgeHidden[indexPath.row] = true
             
             cellInput.updateBadge(hidden: true)
-
+            self_.viewInput.showSkillInfo(with: skill.info)
         }
 
         collectionMediator.dataCount = 0

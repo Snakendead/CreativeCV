@@ -103,6 +103,18 @@ class WelcomeViewController: BaseModuleViewController, WelcomeViewInput {
         
     }
     
+    func openPhoneURL(_ number: URL) {
+        UIApplication.shared.open(number)
+    }
+    
+    func openMapsURL(_ url: URL) {
+        UIApplication.shared.open(url)
+    }
+    
+    func openEmailURL(_ url: URL) {
+        UIApplication.shared.open(url)
+    }
+
     //MARK: Actions
     
     @IBAction func callButtonAction(_ sender: UIButton) {

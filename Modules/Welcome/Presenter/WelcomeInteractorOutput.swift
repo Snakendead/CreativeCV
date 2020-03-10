@@ -10,6 +10,7 @@ import Foundation
 
 protocol WelcomeInteractorOutput: class {
 
-    func dataDidLoad()
+    func dataDidLoad(info: InfoModel)
+    func dataLoadFailed(_ reason: String)
     
 }

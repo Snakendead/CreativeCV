@@ -13,4 +13,7 @@ protocol WelcomeViewInput: class {
     func showPage()
     func showLoadingError()
     
+    func openPhoneURL(_ number: URL)
+    func openMapsURL(_ url: URL)
+    func openEmailURL(_ url: URL)
 }
