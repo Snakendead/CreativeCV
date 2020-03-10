@@ -10,6 +10,11 @@ import UIKit
 
 class WorkExperienceTableViewCell: UITableViewCell, WorkExperienceCellViewInput {
 
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var companyLabel: UILabel!
+    @IBOutlet weak var roleLabel: UILabel!
+    @IBOutlet weak var infoLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,4 +26,20 @@ class WorkExperienceTableViewCell: UITableViewCell, WorkExperienceCellViewInput 
         // Configure the view for the selected state
     }
     
+    func updateDate(start: String, end: String) {
+        let dateTitle = "\(start)\n–\n\(end)"
+        dateLabel.text = dateTitle
+    }
+    
+    func updateCompany(name: String) {
+        companyLabel.text = name
+    }
+    
+    func updateRole(_ role: String) {
+        roleLabel.text = role
+    }
+    
+    func updateInfo(_ info: String) {
+        infoLabel.text = info
+    }
 }

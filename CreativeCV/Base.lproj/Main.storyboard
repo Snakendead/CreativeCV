@@ -38,7 +38,7 @@
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8FN-Vx-vYI">
-                                <rect key="frame" x="83" y="362.5" width="248" height="64"/>
+                                <rect key="frame" x="41.5" y="362.5" width="331" height="64"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="JcG-g2-t3C"/>
@@ -113,12 +113,23 @@
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="ack-8B-FSW">
                                 <rect key="frame" x="188.5" y="434.5" width="37" height="37"/>
                             </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZYf-xi-mrO">
+                                <rect key="frame" x="119.5" y="660" width="175" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Download profile">
+                                    <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="downloadButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lZd-PU-pB1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="NRO-Ii-39P" firstAttribute="top" secondItem="8FN-Vx-vYI" secondAttribute="bottom" constant="20" id="0QZ-EB-hu3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SG2-Yw-JQP" secondAttribute="trailing" constant="50" id="5QL-TQ-yT8"/>
                             <constraint firstItem="ack-8B-FSW" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="6kn-xR-JrE"/>
+                            <constraint firstItem="8FN-Vx-vYI" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="B7y-GJ-mga"/>
                             <constraint firstItem="NRO-Ii-39P" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ccu-9l-l6F"/>
                             <constraint firstItem="UKw-OO-jBY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="MMk-cs-XaA"/>
                             <constraint firstItem="8FN-Vx-vYI" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="S00-fz-d50"/>
@@ -126,9 +137,10 @@
                             <constraint firstItem="UKw-OO-jBY" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.6" id="YG5-2k-dtC"/>
                             <constraint firstItem="8FN-Vx-vYI" firstAttribute="top" secondItem="UKw-OO-jBY" secondAttribute="bottom" constant="20" id="ZZd-sm-ucd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uVF-YW-XQm" secondAttribute="bottom" constant="50" id="acy-Ew-ALa"/>
-                            <constraint firstItem="8FN-Vx-vYI" firstAttribute="width" secondItem="UKw-OO-jBY" secondAttribute="width" id="dXi-Wo-Ld2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SG2-Yw-JQP" secondAttribute="bottom" constant="50" id="fk0-xE-fMS"/>
                             <constraint firstItem="ack-8B-FSW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="g4A-2p-3K3"/>
+                            <constraint firstItem="ZYf-xi-mrO" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="gnc-z5-ixA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZYf-xi-mrO" secondAttribute="bottom" constant="161" id="hXO-ST-FuU"/>
                             <constraint firstItem="uVF-YW-XQm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="wQi-Wu-2xh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -138,6 +150,7 @@
                     <connections>
                         <outlet property="activityIndicator" destination="ack-8B-FSW" id="80R-tJ-20k"/>
                         <outlet property="callButton" destination="MkH-4x-vnN" id="QR3-R2-4ni"/>
+                        <outlet property="downloadButton" destination="ZYf-xi-mrO" id="bIf-AB-5Cu"/>
                         <outlet property="emailButton" destination="eSx-3M-UAv" id="nFk-U7-At9"/>
                         <outlet property="experienceButton" destination="SG2-Yw-JQP" id="Q15-4t-jdi"/>
                         <outlet property="locationButton" destination="Igu-Cv-i34" id="IA4-N2-fD9"/>
@@ -151,10 +164,10 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
         </scene>
-        <!--Work Experience View Controller-->
+        <!--Work experience-->
         <scene sceneID="g8c-yP-yfc">
             <objects>
-                <viewController id="aVx-Rt-kis" customClass="WorkExperienceViewController" customModule="CreativeCV" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Work experience" id="aVx-Rt-kis" customClass="WorkExperienceViewController" customModule="CreativeCV" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hdM-1l-ZmH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -183,10 +196,10 @@
             </objects>
             <point key="canvasLocation" x="1213.0434782608697" y="109.82142857142857"/>
         </scene>
-        <!--Skills View Controller-->
+        <!--Skills-->
         <scene sceneID="BKN-rS-pjg">
             <objects>
-                <viewController id="8LL-bb-EwX" customClass="SkillsViewController" customModule="CreativeCV" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Skills" id="8LL-bb-EwX" customClass="SkillsViewController" customModule="CreativeCV" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IUf-Fs-5Qd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

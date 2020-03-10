@@ -14,6 +14,12 @@ class WorkExperiencePresenter: NSObject, WorkExperienceViewOutput, WorkExperienc
     weak var viewInput: WorkExperienceViewInput!
 
     var interactor: WorkExperienceInteractorInput!
+    
+    private var collectionData: [WorkExperienceModel] = [] {
+        didSet {
+            collectionMediator.dataCount = collectionData.count
+        }
+    }
 
     init(viewInput: WorkExperienceViewInput, collectionMediator: WorkExperienceCollectionMediator) {
         super.init()
@@ -34,16 +40,11 @@ class WorkExperiencePresenter: NSObject, WorkExperienceViewOutput, WorkExperienc
             [weak self]
             (cellInput, indexPath) in
             guard let self_ = self else { return }
-//            _ = self_.collectionData[indexPath.row]
-
-        }
-
-        collectionMediator.cellSelectionClosure = {
-            [weak self]
-            (indexPath) in
-            guard let self_ = self else { return }
-//            _ = self_.collectionData[indexPath.row]
-
+            let experience = self_.collectionData[indexPath.row]
+            cellInput.updateInfo(experience.info)
+            cellInput.updateRole(experience.role)
+            cellInput.updateCompany(name: experience.companyName)
+            cellInput.updateDate(start: experience.startTime, end: experience.endTime)
         }
 
         collectionMediator.dataCount = 0
@@ -51,8 +52,14 @@ class WorkExperiencePresenter: NSObject, WorkExperienceViewOutput, WorkExperienc
 
     //MARK: WorkExperienceInteractorOutput methods
 
-    internal func viewIsReady() {
+    internal func dataDidLoad(_ models: [WorkExperienceModel]) {
+        collectionData = models
+    }
+    
+    //MARK: WorkExperienceViewOutput methods
 
+    internal func viewIsReady() {
+        interactor.loadData()
     }
 
     internal func viewWillAppear() {
@@ -61,7 +68,4 @@ class WorkExperiencePresenter: NSObject, WorkExperienceViewOutput, WorkExperienc
 
     //MARK:
 
-    internal func getViewLayer() -> Any {
-        return viewInput
-    }
 }

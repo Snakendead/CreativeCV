@@ -11,7 +11,13 @@ import Foundation
 protocol WelcomeViewInput: class {
 
     func showPage()
-    func showLoadingError()
+    func showLoadingError(_ text: String)
+    
+    func showName(_ name: String)
+    
+    func enableDownloadButton()
+    func disableDownloadButton()
+    func hideDownloadButton()
     
     func openPhoneURL(_ number: URL)
     func openMapsURL(_ url: URL)

@@ -35,7 +35,8 @@ class SkillsTableViewCell: UITableViewCell, SkillsCellViewInput {
     }
     
     func update(progress: Float) {
-        progressView.setProgress(progress, animated: false)
+        let animated = progressView.progress <= 0.0001
+        progressView.setProgress(progress, animated: animated)
     }
 
     func updateBadge(hidden: Bool) {

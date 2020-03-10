@@ -10,4 +10,6 @@ import Foundation
 
 protocol WorkExperienceInteractorInput: class {
 
+    func loadData()
+    
 }

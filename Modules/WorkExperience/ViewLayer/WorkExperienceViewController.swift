@@ -40,7 +40,7 @@ class WorkExperienceViewController: BaseModuleViewController, WorkExperienceView
     }
 
     private func setupUI() {
-
+        navigationController?.setNavigationBarHidden(false, animated: true)
     }
 
     private func setupActions() {

@@ -39,17 +39,25 @@ class WelcomePresenter: NSObject, WelcomeViewOutput, WelcomeInteractorOutput {
         self.info = info
         DispatchQueue.main.async {
             self.viewInput.showPage()
+            self.viewInput.hideDownloadButton()
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            self.viewInput.showName(info.name + " " + info.surname)
         }
     }
     
     func dataLoadFailed(_ reason: String) {
-        
+        DispatchQueue.main.async {
+            self.viewInput.showLoadingError(reason)
+            self.viewInput.enableDownloadButton()
+        }
     }
 
     //MARK: WelcomeViewOutput methods
 
     internal func viewIsReady() {
-        interactor.loadData()
+        
     }
 
     internal func viewWillAppear() {
@@ -87,4 +95,8 @@ class WelcomePresenter: NSObject, WelcomeViewOutput, WelcomeInteractorOutput {
         viewInput.openEmailURL(url)
     }
 
+    func downloadDidTapped() {
+        interactor.loadData()
+        viewInput.disableDownloadButton()
+    }
 }

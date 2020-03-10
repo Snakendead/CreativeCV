@@ -10,4 +10,8 @@ import UIKit
 
 protocol WorkExperienceCellViewInput: UITableViewCell {
     
+    func updateDate(start: String, end: String)
+    func updateCompany(name: String)
+    func updateRole(_ role: String)
+    func updateInfo(_ info: String)
 }

@@ -18,4 +18,9 @@ class WorkExperienceInteractor: NSObject, WorkExperienceInteractorInput {
         self.output = output
         super.init()
     }
+    
+    func loadData() {
+        let models = serviceFacade.databaseManager.getWorks()
+        output.dataDidLoad(models)
+    }
 }

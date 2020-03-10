@@ -40,7 +40,7 @@ class SkillsViewController: BaseModuleViewController, SkillsViewInput {
     }
 
     private func setupUI() {
-
+        navigationController?.setNavigationBarHidden(false, animated: true)
     }
 
     private func setupActions() {

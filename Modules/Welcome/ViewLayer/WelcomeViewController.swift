@@ -26,6 +26,8 @@ class WelcomeViewController: BaseModuleViewController, WelcomeViewInput {
     
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
+    @IBOutlet weak var downloadButton: UIButton!
+    
     private var printEffectTimer: Timer? = nil
     
     //MARK: Initialization
@@ -51,13 +53,10 @@ class WelcomeViewController: BaseModuleViewController, WelcomeViewInput {
     }
 
     private func setupUI() {
-        photoImageView.layer.cornerRadius = 10.0
+        navigationController?.setNavigationBarHidden(true, animated: false)
         
-        activityIndicator.startAnimating()
-        photoTopConstraint.constant = -300
-        UIView.performWithoutAnimation {
-            self.view.layoutIfNeeded()
-        }
+        photoImageView.layer.cornerRadius = 10.0
+        photoImageView.alpha = 0.0
     }
 
     private func setupActions() {
@@ -67,15 +66,38 @@ class WelcomeViewController: BaseModuleViewController, WelcomeViewInput {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         output.viewWillAppear()
+        
+        navigationController?.setNavigationBarHidden(true, animated: true)
     }
 
     //MARK: WelcomeViewInput methods
 
+    func showName(_ name: String) {
+        
+        var characterArray = [Character]()
+        for character in name {
+            characterArray.append(character)
+        }
+
+        guard characterArray.count > 0 else { return }
+        
+        var index = 0
+
+        printEffectTimer = Timer.scheduledTimer(withTimeInterval: 0.1,
+                                                repeats: true,
+                                                block: { [weak self] (timer) in
+                                                    guard let self_ = self else { return }
+                                                    self_.nameTextView.text.append(characterArray[index])
+                                                    index += 1
+                                                    if index == characterArray.count {
+                                                        timer.invalidate()
+                                                    }
+        })
+    }
+    
     func showPage() {
         activityIndicator.stopAnimating()
-        
-        photoTopConstraint.constant = 20
-        
+                
         self.callButton.isHidden = false
         self.emailButton.isHidden = false
         self.locationButton.isHidden = false
@@ -91,28 +113,54 @@ class WelcomeViewController: BaseModuleViewController, WelcomeViewInput {
                         self.locationButton.alpha = 1.0
                         self.skillsButton.alpha = 1.0
                         self.experienceButton.alpha = 1.0
-                        
-                        self.view.layoutIfNeeded()
+                        self.photoImageView.alpha = 1.0
         }) { (_) in
             
         }
         
     }
     
-    func showLoadingError() {
-        
+    func showLoadingError(_ text: String) {
+        showSimpleAlert(with: nil, message: text)
     }
     
     func openPhoneURL(_ number: URL) {
-        UIApplication.shared.open(number)
+        if UIApplication.shared.canOpenURL(number) {
+            UIApplication.shared.open(number)
+        }
+        else {
+            showSimpleAlert(with: "Warning", message: "This device can't open phone url \(number.absoluteString)")
+        }
     }
     
     func openMapsURL(_ url: URL) {
-        UIApplication.shared.open(url)
+        if UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url)
+        }
+        else {
+            showSimpleAlert(with: "Warning", message: "This device can't open maps url \(url.absoluteString)")
+        }
     }
     
     func openEmailURL(_ url: URL) {
-        UIApplication.shared.open(url)
+        if UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url)
+        }
+        else {
+            showSimpleAlert(with: "Warning", message: "This device can't open email url \(url.absoluteString)")
+        }
+    }
+    
+    func enableDownloadButton() {
+        downloadButton.isEnabled = true
+    }
+    
+    func disableDownloadButton() {
+        downloadButton.isEnabled = false
+    }
+    
+    func hideDownloadButton() {
+        downloadButton.isHidden = true
     }
 
     //MARK: Actions
@@ -129,4 +177,18 @@ class WelcomeViewController: BaseModuleViewController, WelcomeViewInput {
         output.locationDidTapped()
     }
         
+    @IBAction func downloadButtonAction(_ sender: UIButton) {
+        activityIndicator.startAnimating()
+        output.downloadDidTapped()
+    }
+    
+    //MARK: private
+    
+    func showSimpleAlert(with title: String?, message: String?) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        let cancelAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil)
+        alert.addAction(cancelAction)
+        
+        present(alert, animated: true, completion: nil)
+    }
 }

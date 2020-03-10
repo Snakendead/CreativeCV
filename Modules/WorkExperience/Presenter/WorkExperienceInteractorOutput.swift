@@ -10,4 +10,5 @@ import Foundation
 
 protocol WorkExperienceInteractorOutput: class {
 
+    func dataDidLoad(_ models: [WorkExperienceModel])
 }

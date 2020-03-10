@@ -18,4 +18,5 @@ protocol WelcomeViewOutput: class {
     func callDidTapped()
     func locationDidTapped()
     func emailDidTapped()
+    func downloadDidTapped()
 }
